@@ -83,7 +83,7 @@
             // Exemple 5
             // Vous vous rappelez du TP2 de POO? On avait deux valeurs pour chaque armes. Il y avait donc une 
             // bonne raison d'utiliser un tuple puisque chaque armes avait des points pour l'attaque et la défense.
-            // j'utilise une fonction qui retourne les 2 valeurs d'une arme, le retour sera un tuple.
+            // J'utilise une fonction qui retourne les 2 valeurs d'une arme, le retour sera un tuple.
             // Dans cette boucle j'affiche avec l'aide du tuple les 2 valeurs de chaque arme.
             Console.WriteLine();
             foreach (Weapons weapon in Enum.GetValues(typeof(Weapons)))
