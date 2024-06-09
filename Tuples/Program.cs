@@ -168,8 +168,14 @@
         }
 
 
-        //****** Fonctions ******
-        // À noter, les fonctions sont simplifiées au maximum pour fin d'exemple.
+        /*************************************** Fonctions ***************************************
+         *                                                                                       *
+         *        À noter, les fonctions sont simplifiées au maximum pour fin d'exemple.         *
+         *         Plusieurs informations et explication sont aussi présentes dans les           *
+         *        fonctions ci dessous. Les lire, analyser et comprendre est donc utile          *
+         *             pour la compréhensions et l'utilisations de tuples en C#.                 *
+         *                                                                                       *
+         *****************************************************************************************/
 
         // Exemple 1: Deux fonctions                      
         public static int GetValue1()
