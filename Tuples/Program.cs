@@ -241,7 +241,7 @@
             };
         }
 
-        // Exemple 8: Instanciation de plusieurs types dans la même fonction et retour sous forme de tuple (4 valeurs).
+        // Exemple 8: Instanciation de plusieurs types dans la même fonction et retour sous forme de tuple (4 objets).
         public static (FakeClass, AnOtherClass, List<String>, bool[]) Init()
         {
             FakeClass fakeClass = new("mille-vingt-quatre");
