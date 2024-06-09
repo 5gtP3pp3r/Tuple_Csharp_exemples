@@ -12,7 +12,7 @@
              *              et recherches personnelles sur le sujet. Je met donc se code               *
              *                à la disposition de mes amis et collègues de ma cohorte.                 *
              *                Vous avez trouvés des erreurs de syntaxe ou orthographe?                 *
-             *              N'hésiter pas à faire un pull request pour modifier mon code.               *
+             *              N'hésiter pas à faire un pull request pour modifier mon code.              *
              *             Merci et au plaisir, en espèrent que ce projet vous soit utile.             *
              *                                                                                         *
              *******************************************************************************************/
