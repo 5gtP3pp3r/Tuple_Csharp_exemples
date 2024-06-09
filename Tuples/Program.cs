@@ -191,10 +191,10 @@
 
         // Exemple 2: Une fonctions avec tuple
         public static (int, int) GetValues()
-        // signature (item 1, item 2)
+      // signature (item 1, item 2)
         {
             return (1, 2);
-            // retour (item 1, item 2)
+    // retour (item 1, item 2)
         }
 
         // Exemple 3: Fonction qui prend 2 paramètres et retourne les résultats sous forme de tuple.
