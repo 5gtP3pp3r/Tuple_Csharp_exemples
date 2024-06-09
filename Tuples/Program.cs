@@ -73,7 +73,7 @@
             foreach (Weapons weapon in Enum.GetValues(typeof(Weapons)))
             {
                 (int attackPts, int defensePts) = SetPtsByWeapons(weapon);
-                Console.WriteLine($"{weapon}, points d'attaque: {attackPts}, points de defense: {defensePts}\n");
+                Console.WriteLine($"{weapon}, points d'attaque: {attackPts}, points de defense: {defensePts}");
             }
 
 
