@@ -46,8 +46,8 @@
             // Nous allons entrer un nombre et un diviseur, la fonction divisera le nombre par le diviseur
             // et effectuera aussi un modulo avec le même diviseur.
 
-            Console.WriteLine($"\nLe nombre {number} / {divider} = {division}.");
-            Console.WriteLine($"Le nombre {number} % {divider} = {modulo}.");
+            Console.WriteLine($"\n{number} / {divider} = {division}.");
+            Console.WriteLine($"{number} % {divider} = {modulo}.");
 
 
 
