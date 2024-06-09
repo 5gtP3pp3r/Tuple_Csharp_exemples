@@ -1,0 +1,22 @@
+# Visual Studio
+.vscode/
+.vs/
+*.exe
+*.dll
+*.obj
+*.log
+*.user
+*.pdb
+*.cache
+*.csproj.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# Other
+*.tmp
+*.log
+*.lck
+*.vscode/
