@@ -35,7 +35,7 @@
             Console.WriteLine("Les valeurs de value1 et value2 sont: " + value1 + " et " + value2);
 
 
-            // La même actions pour des valeurs différente mais avec un lien ou une raison semblable
+            // La même actions pour des valeurs différente, mais avec un lien ou une raison semblable
             // de déterminer 2 valeurs avec le tuple utilisant une seule fonctions. 
 
             // À noter la fonction doit être logique et être utilisée pour des valeurs qui ont soit un 
