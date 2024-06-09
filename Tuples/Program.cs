@@ -171,9 +171,9 @@
         /*************************************** Fonctions ***************************************
          *                                                                                       *
          *        À noter, les fonctions sont simplifiées au maximum pour fin d'exemple.         *
-         *         Plusieurs informations et explication sont aussi présentes dans les           *
+         *         Plusieurs informations et explications sont aussi présentes dans les          *
          *        fonctions ci dessous. Les lire, analyser et comprendre est donc utile          *
-         *             pour la compréhensions et l'utilisations de tuples en C#.                 *
+         *             pour la compréhensions et l'utilisations des tuples en C#.                *
          *                                                                                       *
          *****************************************************************************************/
 
@@ -195,14 +195,14 @@
             // retour (item 1, item 2)
         }
 
-        // Exemple 3: Fonction qui prend 2 paramètres et retourne les résultats sous forme de tuple
+        // Exemple 3: Fonction qui prend 2 paramètres et retourne les résultats sous forme de tuple.
         public static (int, int) ModuloDiv(int number, int divider)
         {
             return (number / divider, number % divider);
         }
 
-        // Exemple 5: Fonction qui retourne des points d'attaques ET de défenses des armes
-        //            retour sous forme de tuple.
+        // Exemple 5: Fonction qui retourne des points d'attaques ET de défenses des armes.
+        //            Retour sous forme de tuple.
         public static (int, int) SetPtsByWeapons(Weapons weapon)
         {
             int attackPts = 0;
@@ -225,8 +225,8 @@
             return (attackPts, defensePts);
         }
 
-        // Fonction qui retourne des points d'attaques ET de défenses des classes
-        // retour sous forme de tuple. Même fonction switch/case que pour les armes,
+        // Fonction qui retourne des points d'attaques ET de défenses des classes.
+        // Retour sous forme de tuple. Même fonction switch/case que pour les armes,
         // mais énormément simplifiée grace à la forme "lambda"               
         public static (int, int) SetPtsByClass(Class @class)
         {
