@@ -56,7 +56,7 @@
             // Ici on 2 "string" avec des valeurs différentes.
             string nom1 = "Jean";
             string nom2 = "Pierre";
-            Console.WriteLine($"le nom1 est {nom1} et le nom2 est {nom2}");
+            Console.WriteLine($"\nle nom1 est {nom1} et le nom2 est {nom2}");
 
             (nom1, nom2) = (nom2, nom1);
             Console.WriteLine($"le nom1 est {nom1} et le nom2 est {nom2}");
