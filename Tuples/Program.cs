@@ -196,7 +196,7 @@
                     defensePts = 1;
                     break;
                 case Weapons.Sword:
-                    attackPts = 2;
+                    attackPts = 5;
                     defensePts = 2;
                     break;
             }  
