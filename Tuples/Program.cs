@@ -3,8 +3,23 @@
     internal class Program
     {
         static void Main(string[] args)
+
+            /*******************************************************************************************
+             *                                                                                         *
+             *              Ce projet est une une initiative personnelle pour expliquer                *  
+             *               et donner des exemples sur l'utilisation des tuples en C#.                *
+             *              Le code est original et est résultat de mes expérimentations               *
+             *              et recherches personnelles sur le sujet. Je met donc se code               *
+             *                à la disposition de mes amis et collègues de ma cohorte.                 *
+             *                Vous avez trouvés des erreurs de syntaxe ou orthographe?                 *
+             *              N'hésiter pas à fair un pull request pour modifier mon code.               *
+             *             Merci et au plaisir, en espèrent que ce projet vous soit utile.             *
+             *                                                                                         *
+             *******************************************************************************************/
+
+
         {
-            // Voici des exemples simple d'utilisations de tuple. Un bon avantage est que
+            // Voici des exemples simples d'utilisations de tuple. Un bon avantage est que
             // l'utilisation d'un tuple permet de raccourcir un peut le nombre de ligne de codes
             // et de regrouper des valeurs pertinentes ensemble.
 
@@ -22,8 +37,8 @@
 
             // La même actions pour des valeurs différente mais avec un lien ou une raison semblable
             // de déterminer 2 valeurs avec le tuple utilisant une seule fonctions. 
-            
-            // À noter la fonction doit être logique et être utilisé pour des valeurs qui ont soit un 
+
+            // À noter la fonction doit être logique et être utilisée pour des valeurs qui ont soit un 
             // rapport ensemble ou venant, par exemple d'un même objet. On utilisera pas le tuple simplement 
             // pour raccourcir le code. Les valeurs ont un liens entre elles. 
 
@@ -37,7 +52,7 @@
 
             Console.WriteLine("Les mêmes valeurs avec tuple sont: " + tuple1 + " et " + tuple2);
 
-            
+
 
             // Exemple 3
             int number = 9;
@@ -68,7 +83,8 @@
             // Exemple 5
             // Vous vous rappelez du TP2 de POO? On avait deux valeurs pour chaque armes. Il y avait donc une 
             // bonne raison d'utiliser un tuple puisque chaque armes avait des points pour l'attaque et la défense.
-            // dans cette boucle j'affiche avec l'aide du tuple les 2 valeurs de chaque arme.
+            // j'utilise une fonction qui retourne les 2 valeurs d'une arme, le retour sera un tuple.
+            // Dans cette boucle j'affiche avec l'aide du tuple les 2 valeurs de chaque arme.
             Console.WriteLine();
             foreach (Weapons weapon in Enum.GetValues(typeof(Weapons)))
             {
@@ -113,10 +129,10 @@
 
             // Exemple 8 
             // On peut utiliser les tuples avec n'importe quel type. Disons
-            // que l'on a plusieurs objets à initialiser pour un programme,
-            // on pourrait tous les initialiser dans une seule fonction.
+            // que l'on a plusieurs objets à instancier pour un programme,
+            // on pourrait tous les instancier dans une seule fonction.
 
-            (FakeClass fakeClass, AnOtherClass anOtherClass, List<String> list, bool[] trueOrFalse) = Initialisation();
+            (FakeClass fakeClass, AnOtherClass anOtherClass, List<String> list, bool[] trueOrFalse) = Init();
 
             Console.WriteLine("\n" + fakeClass.Name + "\n" + anOtherClass.Number);
             PrintCollection(list);
@@ -127,9 +143,9 @@
 
             // Exemple 9
             // Les valeurs dans un tuple peuvent être simplifiés. Parfois une fonction pourrait avoir
-            // comme paramètre des objets qui ont plusieurs valeurs,mais la fonction n'utilisera
-            // qu'une seule des 2 valeurs. L'exemple de simplification se retrouve dans la fonction
-            // "ComputDamagePtsWeaponAndClass()" plus bas dans "Exemple 9:" .
+            // comme paramètre des objets qui ont plusieurs valeurs, mais la fonction n'utilisera
+            // qu'une seule des 2 valeurs. L'exemple de simplification se trouve dans la fonction
+            // "ComputDamagePtsWeaponAndClass()" plus bas dans "Exemple 9: ".
             var simpleBow = SetPtsByWeapons(Weapons.Bow);
             var shortSword = SetPtsByWeapons(Weapons.Sword);
             // Chaque armes est instanciées avec ses 2 valeurs.
@@ -147,7 +163,7 @@
             int warriorWithSword = ComputDamagePtsWeaponAndClass(Weapons.Sword, Class.Warrior);
             // les variables "rangerWithBow" et "warriorWithSword" ont été instanciées avec les valeurs 
             // des dommages additionnés de leurs armes et classes.                       
-            Console.WriteLine($"\nDommages archer avec arc: {rangerWithBow}");                        
+            Console.WriteLine($"\nDommages archer avec arc: {rangerWithBow}");
             Console.WriteLine($"Dommages guerrier avec épé: {warriorWithSword}");
         }
 
@@ -155,7 +171,7 @@
         //****** Fonctions ******
         // À noter, les fonctions sont simplifiées au maximum pour fin d'exemple.
 
-            // Exemple 1: Deux fonctions                      
+        // Exemple 1: Deux fonctions                      
         public static int GetValue1()
         {
             return 1;
@@ -170,11 +186,11 @@
         // signature (item 1, item 2)
         {
             return (1, 2);
-         // retour (item 1, item 2)
+            // retour (item 1, item 2)
         }
 
         // Exemple 3: Fonction qui prend 2 paramètres et retourne les résultats sous forme de tuple
-        public static (int,int) ModuloDiv(int number, int divider )
+        public static (int, int) ModuloDiv(int number, int divider)
         {
             return (number / divider, number % divider);
         }
@@ -199,7 +215,7 @@
                     attackPts = 5;
                     defensePts = 2;
                     break;
-            }  
+            }
             return (attackPts, defensePts);
         }
 
@@ -217,8 +233,8 @@
             };
         }
 
-        // Exemple 8: Instanciation de plusieurs types dans la même fonction et retour sous forme de tuple (4 valeurs)
-        public static (FakeClass, AnOtherClass, List<String>, bool[]) Initialisation()
+        // Exemple 8: Instanciation de plusieurs types dans la même fonction et retour sous forme de tuple (4 valeurs).
+        public static (FakeClass, AnOtherClass, List<String>, bool[]) Init()
         {
             FakeClass fakeClass = new("mille-vingt-quatre");
             AnOtherClass anOtherClass = new(1024);
@@ -228,7 +244,7 @@
             return (fakeClass, anOtherClass, list, trueOrFalse);
         }
 
-        // Exemple 9: Simplification des valeurs dans un tuple
+        // Exemple 9: Simplification des valeurs dans un tuple.
         public static int ComputDamagePtsWeaponAndClass(Weapons weapon, Class @class)
         {
             (int weaponDamage, _) = SetPtsByWeapons(weapon);
@@ -252,7 +268,7 @@
         public static void PrintCollection<T>(IEnumerable<T> collection)
         {
             bool isFirstItem = true;
-            foreach (var item in collection) 
+            foreach (var item in collection)
             {
                 if (isFirstItem)
                 {
@@ -262,9 +278,11 @@
                 else
                 {
                     Console.Write(", " + item);
-                }               
+                }
             }
             Console.Write(" ]");
         }
     }
 }
+
+// Vos commentaires: 
