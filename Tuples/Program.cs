@@ -68,7 +68,7 @@
 
             //Exemple 4
             // Le tuple peut être utile dans le cas où on voudrait échanger des valeurs.
-            // Ici on 2 "string" avec des valeurs différentes.
+            // Ici on a deux "string" avec des valeurs différentes.
             string nom1 = "Jean";
             string nom2 = "Pierre";
             Console.WriteLine($"\nle nom1 est {nom1} et le nom2 est {nom2}");
