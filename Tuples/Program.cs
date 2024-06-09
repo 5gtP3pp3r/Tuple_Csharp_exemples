@@ -146,6 +146,7 @@
             // comme paramètre des objets qui ont plusieurs valeurs, mais la fonction n'utilisera
             // qu'une seule des 2 valeurs. L'exemple de simplification se trouve dans la fonction
             // "ComputDamagePtsWeaponAndClass()" plus bas dans "Exemple 9: ".
+
             var simpleBow = SetPtsByWeapons(Weapons.Bow);
             var shortSword = SetPtsByWeapons(Weapons.Sword);
             // Chaque armes est instanciées avec ses 2 valeurs.
@@ -258,7 +259,7 @@
             (int classDamage, _) = SetPtsByClass(@class);
             //             *  ^  *
 
-            // Lorsqu'un objet qui utilise un tuple est utilisé. il est possible d'ignorer une des valeurs.
+            // Lorsqu'un objet qui utilise un tuple est utilisé, il est possible d'ignorer une des valeurs.
             // Ici on n'était intéressé que par les points de dommages, donc les points de défenses étaient
             // inutiles. Les points de défenses existe toujours, mais puisqu'on en avait pas besoin nous
             // avons simplifié l'équation avec " _ ". De cette manière l'utilisation des valeurs utiles reste
