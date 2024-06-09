@@ -183,16 +183,29 @@
         //            retour sous forme de tuple.
         public static (int, int) SetPtsByWeapons(Weapons weapon)
         {
-            return weapon switch
+            int attackPts = 0;
+            int defensePts = 0;
+            switch (weapon)
             {
-                Weapons.Fists => (1, 0), 
-                Weapons.Bow => (3, 1),
-                Weapons.Sword => (5, 2),
-                _ => (0, 0),
-            };
+                case Weapons.Fists:
+                    attackPts = 1;
+                    defensePts = 0;
+                    break;
+                case Weapons.Bow:
+                    attackPts = 3;
+                    defensePts = 1;
+                    break;
+                case Weapons.Sword:
+                    attackPts = 2;
+                    defensePts = 2;
+                    break;
+            }  
+            return (attackPts, defensePts);
         }
-        //            Fonction qui retourne des points d'attaques ET de défenses des classes
-        //            retour sous forme de tuple.
+
+        // Fonction qui retourne des points d'attaques ET de défenses des classes
+        // retour sous forme de tuple. Même fonction switch/case que pour les armes,
+        // mais énormément simplifiée grace à la forme "lambda"               
         public static (int, int) SetPtsByClass(Class @class)
         {
             return @class switch
