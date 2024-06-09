@@ -109,6 +109,7 @@
             // Ou afficher seulement la première valeur.
             Console.WriteLine("\n\"nom\": " + bow.Item1.ToString());
             // Remarquez que les ".Item1" et ".Item2" représentent les positions des valeurs dans le tuple.
+            // Il est donc TRÈS IMPORTANT de ne pas les mélanger. Revoir exemple 2 pour cette explication.
 
 
 
